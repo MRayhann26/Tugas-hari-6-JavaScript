@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas-H6-JavaScript</title>
+    <script>type="text/javascript"
+    window.onload = function() {
+    alert("Halo User! Selamat datang di halaman ini!");
+    }
+    </script>
+</head>
+<body>
+    <h1>BIODATA</h1>
+    <form action="#" method="post" onsubmit="return validasi()">
+        <label class="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="masukkan nama anda" size="30"><br> <br>
+        <label class="tanggal-lahir"> Tanggal Lahir</label>
+        <input type="text" id="tanggal-lahir" name="tanggal-lahir" placeholder="masukkan tanggal lahir anda" size="30"><br> <br>
+        <label class="alamat">Alamat</label>
+        <input type="text" id="alamat" name="alamat" placeholder="masukkan alamat anda" size="30"><br> <br>
+        <label class="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="masukkan email anda" size="30"><br> <br>
+        <input type="submit" value="kirim">
+        </form>
+
+        <script>
+            function validasi(){
+                var Nama = document.getElementById("nama").value;
+                var TanggalLahir = document.getElementById("tanggal-lahir").value;
+                var Alamat = document.getElementById("alamat").value;
+                var Email = document.getElementById("email").value;
+            if (nama == ""){
+                alert("nama harus diisi!");
+                return false;
+            }
+
+            if (TanggalLahir == ""){
+                alert("tanggal lahir harus diisi!");
+                return false;
+            }
+
+            if (Alamat == ""){
+                alert("alamat harus diisi!");
+                return false;
+            }
+            
+            if (email == ""){
+                alert("email harus diisi!");
+                return false;
+            }
+            return true;
+            }
+    
+        </script> 
+<br>        
+<button onclick="Dialog1()">Dialog 1</button>
+<button onclick="Dialog2()">Dialog 2</button>
+
+<script>
+function Dialog1() {
+    alert("Ini adalah dialog 1!");
+}
+
+function Dialog2() {
+    alert("Ini adalah dialog 2!");
+}
+</script>
+</body>
+</html>
